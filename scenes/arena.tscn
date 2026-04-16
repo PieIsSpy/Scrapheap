@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bld3s56glk8s6" path="res://assets/tileset.png" id="1_e05a3"]
 [ext_resource type="PackedScene" uid="uid://b846i1hv4occo" path="res://entities/player/player.tscn" id="2_wl4x5"]
+[ext_resource type="PackedScene" uid="uid://dct1t2vehbiyh" path="res://components/camera/camera.tscn" id="3_olpmc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wl4x5"]
 texture = ExtResource("1_e05a3")
@@ -108,5 +109,4 @@ tile_set = SubResource("TileSet_olpmc")
 [node name="CharacterBody2D" parent="." unique_id=1573787905 instance=ExtResource("2_wl4x5")]
 position = Vector2(498, 299)
 
-[node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=75276371]
-position_smoothing_enabled = true
+[node name="Camera2D" parent="CharacterBody2D" unique_id=1772148885 instance=ExtResource("3_olpmc")]
