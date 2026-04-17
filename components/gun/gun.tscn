@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://doj2vrji0alk4"]
+
+[ext_resource type="Script" uid="uid://x1vvqtmks70h" path="res://components/gun/gun.gd" id="1_sob0f"]
+[ext_resource type="Texture2D" uid="uid://da4pwhy77wm27" path="res://assets/gun.png" id="1_ueq7p"]
+
+[node name="Gun" type="Node2D" unique_id=1416124888]
+script = ExtResource("1_sob0f")
+
+[node name="RotationOffset" type="Node2D" parent="." unique_id=1256958889]
+
+[node name="Sprite2D" type="Sprite2D" parent="RotationOffset" unique_id=708064450]
+texture_filter = 1
+rotation = 0.7679449
+texture = ExtResource("1_ueq7p")
+
+[node name="shadow" type="Sprite2D" parent="RotationOffset/Sprite2D" unique_id=1989725111]
+modulate = Color(0, 0, 0, 0.21568628)
+z_index = -1
+texture_filter = 1
+texture = ExtResource("1_ueq7p")
+
+[node name="Marker2D" type="Marker2D" parent="RotationOffset/Sprite2D" unique_id=1973940090]
+position = Vector2(14.386796, -13.8931675)
+
+[node name="Timer" type="Timer" parent="." unique_id=502989019]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

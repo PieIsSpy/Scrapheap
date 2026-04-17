@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dbd858xad0thx" path="res://entities/player/player_movement.gd" id="1_abrql"]
 [ext_resource type="Texture2D" uid="uid://dey6hyajpyjq3" path="res://assets/icon.svg" id="1_merdl"]
+[ext_resource type="PackedScene" uid="uid://doj2vrji0alk4" path="res://components/gun/gun.tscn" id="3_sglur"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b0kkn"]
 size = Vector2(114, 113)
@@ -17,3 +18,7 @@ texture = ExtResource("1_merdl")
 position = Vector2(0, 0.5)
 scale = Vector2(0.5, 0.5)
 shape = SubResource("RectangleShape2D_b0kkn")
+
+[node name="Gun" parent="." unique_id=1416124888 instance=ExtResource("3_sglur")]
+position = Vector2(64, -11)
+scale = Vector2(1.5, 1.5)
