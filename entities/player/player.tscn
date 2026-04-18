@@ -9,6 +9,7 @@ size = Vector2(114, 113)
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=1573787905]
 script = ExtResource("1_abrql")
+metadata/IS_PLAYER = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=835587389]
 scale = Vector2(0.5, 0.5)
@@ -20,5 +21,6 @@ scale = Vector2(0.5, 0.5)
 shape = SubResource("RectangleShape2D_b0kkn")
 
 [node name="Gun" parent="." unique_id=1416124888 instance=ExtResource("3_sglur")]
-position = Vector2(64, -11)
+position = Vector2(36, -0.9999981)
 scale = Vector2(1.5, 1.5)
+metadata/IS_PLAYER = true

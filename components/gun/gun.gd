@@ -2,8 +2,6 @@ extends Node2D
 
 const bullet = preload("res://components/bullet/bullet.tscn")
 
-const IS_PLAYER = true
-
 @onready var RotationOffset: Node2D = $RotationOffset
 @onready var SpriteShadow: Sprite2D = $RotationOffset/Sprite2D/shadow
 @onready var ShootPos: Marker2D = $RotationOffset/Sprite2D/Marker2D
