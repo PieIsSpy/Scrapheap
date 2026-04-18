@@ -6,7 +6,7 @@ const bullet = preload("res://components/bullet/bullet.tscn")
 @onready var SpriteShadow: Sprite2D = $RotationOffset/Sprite2D/shadow
 @onready var ShootPos: Marker2D = $RotationOffset/Sprite2D/Marker2D
 
-var fire_rate: float = 0.25
+var fire_rate: float = 0.1
 var can_shoot: bool = true
 
 func _ready() -> void:
