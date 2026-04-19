@@ -24,3 +24,5 @@ shape = SubResource("RectangleShape2D_b0kkn")
 position = Vector2(36, -0.9999981)
 scale = Vector2(1.5, 1.5)
 metadata/IS_PLAYER = true
+
+[node name="PivotMarker" type="Marker2D" parent="." unique_id=2134836044]
