@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 @onready var Gun = $Gun
 @onready var PivotMarker: Marker2D = $PivotMarker
+@onready var SpriteAnim = $AnimationPlayer
 
 @export var speed = 400
 
