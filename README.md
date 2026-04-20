@@ -29,4 +29,3 @@ Player
 
 Enemies
 - https://leothelionknight.itch.io/free-robot-spider-droid
-- https://gabry-corti.itch.io/microwave
