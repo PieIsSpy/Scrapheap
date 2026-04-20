@@ -21,3 +21,12 @@ The following commit conventions has been adopted from this [gist](https://gist.
     <ops>: Commits that affect operational components like infrastructure, deployment, backup, recovery procedures, ...
 
     <chore>: Commits that represent tasks like initial commit, modifying .gitignore, ...
+
+## Asset Sources
+Player
+- https://art-man-oil.itch.io/bots-and-bolts-player
+- https://free-game-assets.itch.io/free-guns-icon-3232-pixel-pack
+
+Enemies
+- https://leothelionknight.itch.io/free-robot-spider-droid
+- https://gabry-corti.itch.io/microwave
