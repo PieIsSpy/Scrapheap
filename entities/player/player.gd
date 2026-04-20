@@ -14,6 +14,17 @@ func _process(delta: float) -> void:
 
 	Gun.look_at(get_global_mouse_position())
 	Gun.rotate(deg_to_rad(30 if mouse_dir.x > 0 else -30))
+	
+	var angle = rad_to_deg(mouse_dir.angle())
+	
+	if angle <= 45 and angle >= -45:
+		SpriteAnim.play("player_right")
+	elif angle >= -135 and angle <= -45:
+		SpriteAnim.play("player_up")
+	elif angle <= -135 or angle >= 135:
+		SpriteAnim.play("player_left")
+	else:
+		SpriteAnim.play("player_down")
 
 func get_input():
 	var input_direction = Input.get_vector("Left", "Right", "Up", "Down")
