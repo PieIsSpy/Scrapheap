@@ -4,7 +4,8 @@ extends CharacterBody2D
 @onready var PivotMarker: Marker2D = $PivotMarker
 @onready var SpriteAnim = $AnimationPlayer
 
-@export var speed = 400
+@export_group("Attributes")
+@export var speed = 500
 
 func _process(delta: float) -> void:
 	var mouse_dir := PivotMarker.global_position.direction_to(get_global_mouse_position())
