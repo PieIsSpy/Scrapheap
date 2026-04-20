@@ -1,6 +1,13 @@
 # Scrapheap
 This is an entry for the Gamedev.js Jam 2026. It was done to familiarize myself in using Godot.
 
+## Controls
+- A/Left Key = Left
+- S/Down Key = Down
+- W/Up Key = Up
+- D/Right Key = Right
+- Left Mouse = Shoot
+
 ## Commit Conventions
 The following commit conventions has been adopted from this [gist](https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13).
 
