@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://doj2vrji0alk4" path="res://components/gun/gun.tscn" id="3_sglur"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b0kkn"]
-size = Vector2(114, 113)
+size = Vector2(28, 65.333336)
 
 [sub_resource type="Animation" id="Animation_sglur"]
 length = 0.001
@@ -125,7 +125,7 @@ vframes = 44
 frame = 220
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=721151820]
-position = Vector2(0, 0.5)
+position = Vector2(1, 3.0000007)
 scale = Vector2(0.5, 0.5)
 shape = SubResource("RectangleShape2D_b0kkn")
 
