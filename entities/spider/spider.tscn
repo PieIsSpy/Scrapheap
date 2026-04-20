@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://c0pj88fxbv0nl"]
+
+[ext_resource type="Script" uid="uid://db040hhnl01ac" path="res://entities/spider/spider.gd" id="1_p33pt"]
+[ext_resource type="Texture2D" uid="uid://dyyqsqho7407" path="res://assets/spider.png" id="1_yx30x"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yx30x"]
+size = Vector2(37.333336, 19.666668)
+
+[sub_resource type="Animation" id="Animation_yx30x"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_p33pt"]
+resource_name = "idle"
+length = 0.2
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.10000001, 0.13333334, 0.16666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_uesss"]
+_data = {
+&"RESET": SubResource("Animation_yx30x"),
+&"idle": SubResource("Animation_p33pt")
+}
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1205190934]
+scale = Vector2(1.5, 1.5)
+script = ExtResource("1_p33pt")
+metadata/IsPlayer = false
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=274818059]
+texture_filter = 1
+texture = ExtResource("1_yx30x")
+hframes = 2
+vframes = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1723397873]
+position = Vector2(0, -0.8333335)
+shape = SubResource("RectangleShape2D_yx30x")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1380709013]
+libraries/ = SubResource("AnimationLibrary_uesss")
+autoplay = &"idle"
+speed_scale = 0.3
