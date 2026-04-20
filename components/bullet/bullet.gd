@@ -10,7 +10,7 @@ extends Sprite2D
 func _physics_process(delta: float) -> void:
 	global_position += Vector2(1, 0).rotated(rotation) * speed * delta
 
-	if RayCast.is_colliding() && RayCast.get_collider().has_meta("Is Player") && !RayCast.get_collider().get_meta("Is Player"):
+	if RayCast.is_colliding():
 		AnimPlayer.play("remove")
 
 func _on_animation_player_animation_finished(anim_name: StringName) -> void:
