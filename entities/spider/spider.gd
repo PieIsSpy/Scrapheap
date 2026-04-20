@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@onready var target = $"../Player"
+@onready var target: CharacterBody2D
 @onready var sprite = $Sprite2D
 @onready var inv_timer = $Invulnerable
 @onready var atk_timer = $Attack
@@ -12,6 +12,9 @@ extends CharacterBody2D
 
 var is_invulnerable = false
 var can_attack = true
+
+func _ready():
+	target = get_tree().get_first_node_in_group("Player")
 
 func _physics_process(delta: float) -> void:
 	var direction = (target.position-position).normalized()
