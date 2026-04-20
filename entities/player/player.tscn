@@ -111,7 +111,7 @@ _data = {
 &"player_up": SubResource("Animation_fkugw")
 }
 
-[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1573787905]
+[node name="Player" type="CharacterBody2D" unique_id=1573787905]
 scale = Vector2(1.5, 1.5)
 script = ExtResource("1_abrql")
 metadata/IS_PLAYER = true

@@ -44,7 +44,7 @@ _data = {
 &"idle": SubResource("Animation_p33pt")
 }
 
-[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1205190934]
+[node name="Spider" type="CharacterBody2D" unique_id=1205190934]
 scale = Vector2(1.5, 1.5)
 script = ExtResource("1_p33pt")
 metadata/IsPlayer = false
