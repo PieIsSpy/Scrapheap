@@ -10,7 +10,7 @@ extends CharacterBody2D
 
 func _process(delta: float) -> void:
 	var mouse_dir := PivotMarker.global_position.direction_to(get_global_mouse_position())
-	Gun.global_position = PivotMarker.global_position + mouse_dir * 60
+	Gun.global_position = PivotMarker.global_position + mouse_dir * 20
 
 	Gun.scale.y = 1 if mouse_dir.x > 0 else -1
 

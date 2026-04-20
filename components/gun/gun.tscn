@@ -20,7 +20,7 @@ texture_filter = 1
 texture = ExtResource("1_ueq7p")
 
 [node name="Marker2D" type="Marker2D" parent="RotationOffset/Sprite2D" unique_id=1973940090]
-position = Vector2(14.386796, -13.8931675)
+position = Vector2(-9.536743e-07, -9.536743e-07)
 rotation = -0.7679449
 
 [node name="Timer" type="Timer" parent="." unique_id=502989019]
