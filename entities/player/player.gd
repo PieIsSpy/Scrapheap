@@ -5,7 +5,8 @@ extends CharacterBody2D
 @onready var SpriteAnim = $AnimationPlayer
 
 @export_group("Attributes")
-@export var speed = 500
+@export var speed: float = 500
+@export var health: int = 100
 
 func _process(delta: float) -> void:
 	var mouse_dir := PivotMarker.global_position.direction_to(get_global_mouse_position())
