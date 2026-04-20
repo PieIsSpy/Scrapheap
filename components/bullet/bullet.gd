@@ -5,6 +5,7 @@ extends Sprite2D
 
 @export_group("Attributes")
 @export var speed: float = 2000.0
+@export var damage: int = 10
 
 func _physics_process(delta: float) -> void:
 	global_position += Vector2(1, 0).rotated(rotation) * speed * delta
