@@ -11,7 +11,10 @@ func _physics_process(delta: float) -> void:
 	global_position += Vector2(1, 0).rotated(rotation) * speed * delta
 
 	if RayCast.is_colliding():
-		AnimPlayer.play("remove")
+		var target = RayCast.get_collider()
+		if is_instance_valid(target) and target.has_method("take_damage"):
+			target.take_damage(damage)
+			AnimPlayer.play("remove")
 
 func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 	if anim_name == "remove":

@@ -63,3 +63,11 @@ shape = SubResource("RectangleShape2D_yx30x")
 libraries/ = SubResource("AnimationLibrary_uesss")
 autoplay = &"idle"
 speed_scale = 0.3
+
+[node name="Invulnerable" type="Timer" parent="." unique_id=599501322]
+wait_time = 0.25
+
+[node name="Attack" type="Timer" parent="." unique_id=2127321608]
+
+[connection signal="timeout" from="Invulnerable" to="." method="_on_invulnerable_timeout"]
+[connection signal="timeout" from="Attack" to="." method="_on_attack_timeout"]

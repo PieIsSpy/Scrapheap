@@ -108,9 +108,8 @@ tile_map_data = PackedByteArray("AAC+/9//AQACAAAAAAC//9//AQAFAAAAAADA/9//AQAFAAA
 tile_set = SubResource("TileSet_olpmc")
 
 [node name="CharacterBody2D" parent="." unique_id=1205190934 instance=ExtResource("4_xdvfk")]
-position = Vector2(249, 157)
 
 [node name="Player" parent="." unique_id=1573787905 instance=ExtResource("2_wl4x5")]
-position = Vector2(498, 299)
+position = Vector2(-461, -29)
 
 [node name="Camera2D" parent="Player" unique_id=1772148885 instance=ExtResource("3_olpmc")]
