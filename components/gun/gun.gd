@@ -11,7 +11,7 @@ func _ready() -> void:
 	$Timer.wait_time = fire_rate
 
 func _physics_process(delta: float) -> void:
-	if Input.is_action_just_pressed("Shoot") and can_shoot:
+	if Input.is_action_pressed("Shoot") and can_shoot:
 		_shoot()
 		can_shoot = false
 		$Timer.start()
